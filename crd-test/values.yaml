@@ -1,1 +1,4 @@
 message: hello
+image:
+  repository: nginx
+  tag: "1.27"
