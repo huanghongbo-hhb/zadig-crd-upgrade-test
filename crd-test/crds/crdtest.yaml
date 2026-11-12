@@ -1,0 +1,25 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: crdtests.zadig-crd-test.koderover.io
+spec:
+  group: zadig-crd-test.koderover.io
+  scope: Namespaced
+  names:
+    kind: CrdTest
+    plural: crdtests
+    singular: crdtest
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          description: chart-v1
+          properties:
+            spec:
+              type: object
+              properties:
+                message:
+                  type: string

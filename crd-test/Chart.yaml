@@ -1,0 +1,6 @@
+apiVersion: v2
+name: crd-test
+description: Minimal chart for verifying the Zadig upgrade CRD option
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
